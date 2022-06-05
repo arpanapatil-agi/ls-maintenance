@@ -1,0 +1,488 @@
+@font-face {
+	font-family: Inter-Regular;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(fonts/Inter-Regular.otf) format("opentype"), url(fonts/Inter-Regular.woff) format("woff"), url(fonts/Inter-Regular.woff2) format("woff2")
+}
+
+@font-face {
+	font-family: Inter-Bold;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(fonts/Inter-Bold.otf) format("opentype"), url(fonts/Inter-Bold.woff) format("woff"), url(fonts/Inter-Bold.woff2) format("woff2")
+}
+
+@font-face {
+	font-family: Inter-Medium;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(fonts/Inter-Medium.otf) format("opentype"), url(fonts/Inter-Medium.woff) format("woff"), url(fonts/Inter-Medium.woff2) format("woff2")
+}
+
+@font-face {
+	font-family: Inter-ExtraLight;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(fonts/Inter-ExtraLight-BETA.otf) format("opentype"), url(fonts/Inter-ExtraLight-BETA.woff) format("woff"), url(fonts/Inter-ExtraLight-BETA.woff2) format("woff2")
+}
+
+@font-face {
+	font-family: Inter-Black;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(/fonts/Inter-Black.otf) format("opentype"), url(/fonts/Inter-Black.woff) format("woff"), url(/fonts/Inter-Black.woff2) format("woff2")
+}
+
+@font-face {
+	font-family: Inter-Light;
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url(/fonts/Inter-Light-BETA.otf) format("opentype"), url(/fonts/Inter-Light-BETA.woff) format("woff"), url(/fonts/Inter-Light-BETA.woff2) format("woff2")
+}
+
+@font-face {
+	font-family: Inter-Light;
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url(/fonts/Inter-Light-BETA.otf) format("opentype"), url(/fonts/Inter-Light-BETA.woff) format("woff"), url(/fonts/Inter-Light-BETA.woff2) format("woff2")
+}
+
+@font-face {
+	font-family: Inter-LightItalic;
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url(/fonts/Inter-LightItalic-BETA.otf) format("opentype"), url(/fonts/Inter-LightItalic-BETA.woff) format("woff"), url(/fonts/nter-LightItalic-BETA.woff2) format("woff2")
+}
+
+@font-face {
+	font-family: Montserrat-Regular;
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url(/fonts/Montserrat-Regular.ttf) format("opentype")
+}
+
+@font-face {
+	font-family: Montserrat-Thin;
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url(/fonts/Montserrat-Thin.ttf) format("opentype")
+}
+
+
+* {
+	box-sizing: border-box;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+div.container {
+	/*mc-grid-row: true;*/
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	position: fixed;
+	/* height: 100%;*/
+}
+
+div.box {
+	position: relative;
+	box-sizing: border-box;
+	margin-bottom: 0;
+	width: 50%;
+	min-width: 300px;
+
+}
+
+/*.container{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}*/
+
+.col-left {
+	background: #1A3FDE;
+	box-shadow: 16px 0px 26px rgba(0, 0, 0, 0.3);
+	width: 50%;
+	height: auto;
+
+}
+
+.col-right {
+	width: 50%;
+	height: auto;
+}
+
+.col-right img {
+	/*background-image:url(./images/Marie_Curie.png);		*/
+	width: 100%;
+	height: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100%;
+}
+
+.ls-logo-wrap {
+	width: 229px;
+	height: 42px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	order: 1;
+	position: relative;
+	left: 126px;
+	top: 75px;
+
+}
+
+.ls-logo-wrap a {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 0px;
+	max-width: 100%;
+	width: auto;
+	max-height: 45px;
+	height: auto;
+	background-size: cover;
+	background-image: url(../images/LifeSphere_logo.svg);
+}
+
+.ls-logo-wrap a {
+	width: 100%;
+}
+
+.ls-container-wrap .ls-main:before {
+	content: '';
+	width: 21px;
+	height: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #34E4C0;
+}
+
+.ls-container-wrap {
+	position: relative;
+	left: 126px;
+}
+
+label {
+	display: inline-block;
+	max-width: 100%;
+}
+
+.pull-left {
+	float: left !important;
+}
+
+.ls-title {
+	margin-bottom: 0;
+	letter-spacing: 0.35px;
+	font-family: 'Inter-Regular';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 44px;
+	line-height: 60px;
+	color: #FFFFFF;
+}
+
+.ls-container-wrap .ls-main:after {
+	clear: both;
+	display: block;
+	content: '';
+}
+
+.ls-main {
+	margin-left: 43px;
+	width: 547px;
+	height: 120px;
+}
+
+.ls-content-wrap {
+	position: relative;
+	left: 126px;
+	margin-top: 175px;
+
+}
+
+.ls-content-main {
+	width: 547px;
+	height: 213px;
+}
+
+.ls-content-title {
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 44px;
+	letter-spacing: 0.005em;
+	color: #FFFFFF;
+}
+
+.ls-container-wrap {
+	margin-top: 162px;
+}
+
+.author {
+	font-family: 'Inter-Regular';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 33px;
+	color: #FFFFFF;
+	margin-top: 48px;
+
+}
+
+
+@media only screen and (min-width: 638px) and (max-width: 1334px) {
+	.ls-title {
+		font-size: 40px;
+	}
+
+	.ls-content-title {
+		font-size: 32px;
+		width: 505px;
+	}
+}
+
+@media only screen and (min-width: 638px) and (max-width: 1251px) {
+	.ls-title {
+		font-size: 36px;
+	}
+
+	.ls-content-title {
+		font-size: 32px;
+		width: 495px;
+	}
+}
+
+@media only screen and (min-width: 638px) and (max-width: 1178px) {
+
+	.ls-content-title {
+		font-size: 30px;
+		width: 470px;
+	}
+}
+
+@media only screen and (min-width: 638px) and (max-width: 1171px) {
+	.ls-title {
+		font-size: 34px;
+	}
+
+	.ls-content-title {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (min-width: 638px) and (max-width: 1130px) {
+	.ls-title {
+		font-size: 31px;
+	}
+
+	.ls-content-title {
+		font-size: 31px;
+		width: 420px;
+	}
+}
+
+@media only screen and (min-width: 638px) and (max-width: 1056px) {
+	.ls-title {
+		font-size: 28px;
+		width: 500px;
+	}
+
+	.ls-content-title {
+		font-size: 28px;
+		width: 379px;
+	}
+}
+
+@media only screen and (min-width: 638px) and (max-width: 994px) {
+	.ls-title {
+		font-size: 24px;
+		width: 430px;
+	}
+
+	.ls-content-title {
+		font-size: 24px;
+		width: 379px;
+	}
+}
+
+@media only screen and (min-width: 638px) and (max-width: 987px) {
+	.ls-title {
+		font-size: 26px;
+		width: 465px;
+	}
+
+	.ls-content-title {
+		font-size: 24px;
+		width: 382px;
+	}
+}
+
+@media only screen and (min-width: 638px) and (max-width: 942px) {
+	.ls-title {
+		font-size: 22px;
+		width: 390px;
+	}
+
+	.ls-content-title {
+		font-size: 20px;
+		width: 318px;
+	}
+}
+
+@media only screen and (min-width: 638px) and (max-width: 838px) {
+	.ls-title {
+		font-size: 21px;
+		width: 350px;
+		line-height: 50px;
+	}
+
+	.ls-content-title {
+		font-size: 20px;
+		width: 295px;
+	}
+}
+
+@media only screen and (min-width: 638px) and (max-width: 811px) {
+
+	.ls-title {
+		font-weight: 500;
+		font-size: 26px;
+		line-height: 32px;
+		width: 248px;
+	}
+
+	.ls-container-wrap .ls-main:before {
+		width: 12px;
+		height: 64px;
+	}
+
+	.ls-container-wrap {
+		left: 40px;
+	}
+
+	.ls-logo-wrap {
+		left: 40px;
+	}
+
+	.ls-main {
+		margin-left: 24px;
+	}
+
+	.ls-content-wrap {
+		left: 40px;
+		margin-top: 43px;
+	}
+
+	.ls-content-title {
+		font-size: 18px;
+		width: 280px;
+		line-height: 28px;
+	}
+
+	.author {
+		margin-top: 16px;
+		font-size: 18px;
+	}
+
+
+}
+
+/*@media only screen and (min-width: 638px) and (max-width: 760px) {
+	.ls-title{
+		font-size: 16px;
+		width: 285px;
+	}
+	.ls-content-title{
+		font-size:30px;
+	}	
+}
+@media only screen and (min-width: 638px) and (max-width: 709px) {
+	.ls-title{
+		font-size: 15px;
+		width: 260px;
+		line-height: 50px;
+	}
+	.ls-content-title{
+		font-size:30px;
+	}	
+}*/
+
+@media only screen and (min-width: 375px) and (max-width: 760px) {
+	.ls-title {
+		font-weight: 500;
+		font-size: 26px;
+		line-height: 32px;
+		width: 248px;
+	}
+
+	.ls-container-wrap .ls-main:before {
+		width: 12px;
+		height: 64px;
+	}
+
+	.ls-container-wrap {
+		left: 40px;
+	}
+
+	.ls-logo-wrap {
+		left: 40px;
+	}
+
+	.ls-main {
+		margin-left: 24px;
+	}
+
+	.ls-content-wrap {
+		left: 40px;
+		margin-top: 43px;
+	}
+
+	.ls-content-title {
+		font-size: 18px;
+		width: 280px;
+		line-height: 28px;
+	}
+
+	.author {
+		margin-top: 16px;
+		font-size: 18px;
+	}
+
+}
