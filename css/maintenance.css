@@ -627,16 +627,20 @@ label {
 
 @media only screen and (min-width: 1131px) and (max-width: 1178px) {
     .ls-title {    
-        font-size: 42px;    
         width: 450px;
     }
-
+    .ls-logo-wrap{
+        left:95px;
+    }
     .ls-content-title {  
-        font-size: 32px;    
         width: 460px;
-    }    
-    .ls-content-wrap {    
+    }  
+    .ls-content-wrap{    
         margin-top: 150px;
+        left:95px;
+    }
+    .ls-container-wrap{
+        left:95px;
     }
 }    
 
@@ -653,6 +657,9 @@ label {
     }     
     .ls-content-title{
         width:510px;
+    }
+    .ls-container-wrap{
+        left: 90px;
     }
 }
 @media only screen and (min-width: 1252px) and (max-width: 1334px) {
