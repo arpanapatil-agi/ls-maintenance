@@ -43,15 +43,7 @@
 	font-style: normal;
 	font-weight: 300;
 	font-display: swap;
-	src: url(/fonts/Inter-Light-BETA.otf) format("opentype"), url(/fonts/Inter-Light-BETA.woff) format("woff"), url(/fonts/Inter-Light-BETA.woff2) format("woff2")
-}
-
-@font-face {
-	font-family: Inter-Light;
-	font-style: normal;
-	font-weight: 300;
-	font-display: swap;
-	src: url(/fonts/Inter-Light-BETA.otf) format("opentype"), url(/fonts/Inter-Light-BETA.woff) format("woff"), url(/fonts/Inter-Light-BETA.woff2) format("woff2")
+	src: url(fonts/Inter-Light-BETA.otf) format("opentype"), url(fonts/Inter-Light-BETA.woff) format("woff"), url(fonts/Inter-Light-BETA.woff2) format("woff2")
 }
 
 @font-face {
@@ -239,7 +231,7 @@ label {
 }
 
 .ls-content-title {
-	font-family: 'Inter-Regular';
+	font-family: 'Inter-Light';
 	font-style: italic;
 	font-weight: 300;
 	font-size: 36px;
